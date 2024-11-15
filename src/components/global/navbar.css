@@ -1,0 +1,39 @@
+.nav {
+  background: var(--bg-nav);
+  align-items: center;
+  display: flex;
+  height: 100px;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 3;
+}
+
+.nav.scrolled {
+  animation: fadeDown ease 0.3s;
+  background-color: var(--bg-nav--scrolled);
+  position: fixed;
+  transform: translateY(0);
+}
+
+.nav-content {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  max-width: var(--container-width);
+  width: 100%;
+}
+
+.nav-list a {
+  padding: 1rem 1.25rem;
+}
+
+@keyframes fadeDown {
+  from {
+    transform: translateY(-100%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}

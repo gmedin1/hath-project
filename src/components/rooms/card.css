@@ -1,0 +1,51 @@
+.card {
+  padding-inline: 1rem;
+}
+
+.card div {
+  height: 100%;
+}
+
+.card-content {
+  background-image: url("./images/room-1.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.card-content > div {
+  align-items: flex-end;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  left: 0;
+  padding: 1.5rem;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 2;
+}
+
+.card-content::before {
+  background-color: var(--bg-backdrop);
+  content: "";
+  display: block;
+  height: 100%;
+  position: relative;
+  width: 100%;
+}
+
+.card-tag {
+  background-color: var(--orange);
+  left: 1.5rem;
+  padding: 1rem 0.25rem;
+  position: absolute;
+  text-orientation: mixed;
+  text-transform: uppercase;
+  top: 1.5rem;
+  transform: rotate(180deg);
+  writing-mode: vertical-rl;
+  z-index: 2;
+}

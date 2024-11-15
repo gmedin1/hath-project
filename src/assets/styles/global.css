@@ -1,0 +1,236 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  text-size-adjust: none;
+}
+
+body {
+  line-height: 1.5;
+  min-height: 100vh;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  text-wrap: balance;
+}
+
+a,
+button {
+  display: block;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+img,
+picture {
+  display: block;
+  max-width: 100%;
+}
+
+/* Utilities */
+/* Utilities: Background */
+
+.bg-dark {
+  background-color: var(--bg-dark);
+}
+
+.bg-light {
+  background-color: var(--bg-light);
+}
+
+/* Utilities: Text Color */
+
+.text-light {
+  color: var(--text-light);
+}
+
+.color-red {
+  color: var(--text-red);
+}
+
+.color-orange {
+  color: var(--text-orange);
+}
+
+.color-yellow {
+  color: var(--text-yellow);
+}
+
+.color-blue {
+  color: var(--text-blue);
+}
+
+/* Utilities: Layout */
+
+.min-h-full {
+  min-height: 100vh;
+}
+
+.auto-grid {
+  display: grid;
+  grid-auto-rows: 30rem;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 12rem), 1fr));
+  margin-bottom: 2rem;
+}
+
+.flow {
+  align-items: center;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  gap: 1rem;
+}
+
+.flow > * {
+  flex: 1 1 100%;
+}
+
+.text-space > *:not(:first-child) {
+  margin-top: 1.25rem;
+}
+
+.container {
+  padding-block: var(--container-padding);
+  margin: 0 auto;
+  max-width: var(--container-width);
+  width: 100%;
+}
+
+.block-box {
+  padding-block: var(--block-box-padding);
+}
+
+.inline-box {
+  padding-inline: var(--inline-box-padding);
+}
+
+.grid {
+  display: grid;
+}
+
+.items-center {
+  place-items: center;
+}
+
+.flex {
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.flex-col {
+  flex-direction: column;
+}
+
+.flex-end {
+  align-items: flex-end;
+  justify-content: flex-end;
+}
+
+.align-center {
+  align-items: center;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+/* Utilities: Text */
+
+.text-center {
+  text-align: center;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+/* Utilities: Fonts */
+
+.global--h1 {
+  font-family: var(--h1);
+  font-size: 4rem;
+  letter-spacing: 0.5px;
+  line-height: 1.25;
+}
+
+.global--h2 {
+  font-family: var(--h2);
+  font-size: 3rem;
+  letter-spacing: 2px;
+}
+
+.global--h3 {
+  font-family: var(--h3);
+  font-size: 1.75rem;
+  letter-spacing: 2px;
+}
+
+.global--previous {
+  font-family: var(--previous);
+  font-size: 1rem;
+  letter-spacing: 2px;
+  margin: 0 0 0.75rem 0.25rem;
+}
+
+.global--p {
+  font-family: var(--regular);
+  font-size: 1rem;
+  letter-spacing: 0.5px;
+}
+
+.global--p-bold {
+  font-family: var(--bold);
+  font-size: 1rem;
+  letter-spacing: 0.5px;
+}
+
+.global--p--italic {
+  font-family: var(--italic);
+  font-size: 1rem;
+  letter-spacing: 0.5px;
+}
+
+.global--tiny {
+  font-family: var(--bold);
+  font-size: 0.75rem;
+  letter-spacing: 1.5px;
+}
+
+.global--link {
+  font-family: var(--din-pro-bold);
+  font-size: 1rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.placement {
+  gap: 1.25rem;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.placement-1 {
+  transform: translateY(170px);
+}
+
+.bg-hero {
+  background-image: url("./images/hero.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}

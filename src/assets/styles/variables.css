@@ -1,0 +1,45 @@
+:root {
+  /* Colors */
+  --red: #ab2858;
+  --orange: #e86f44;
+  --yellow: #f4dd7c;
+  --blue: #78c7c8;
+  --dark: #222222;
+  --light: #ffffff;
+
+  /* Fonts */
+  --din-pro-regular: "DIN Pro Condensed Regular", Helvetica, Arial, sans-serif;
+  --din-pro-medium: "DIN Pro Condensed Medium", Helvetica, Arial, sans-serif;
+  --din-pro-bold: "DIN Pro Condensed Bold", Helvetica, Arial, sans-serif;
+  --montserrat-regular: "Montserrat Regular", Helvetica, Arial, sans-serif;
+  --montserrat-regular--italic: "Montserrat Italic", Helvetica, Arial,
+    sans-serif;
+  --montserrat-bold: "Montserrat Bold", Helvetica, Arial, sans-serif;
+
+  /* Text */
+  --h1: var(--din-pro-bold);
+  --h2: var(--din-pro-medium);
+  --h3: var(--din-pro-bold);
+  --previous: var(--din-pro-regular);
+  --regular: var(--montserrat-regular);
+  --italic: var(--montserrat-regular--italic);
+  --bold: var(--montserrat-bold);
+
+  /* Components */
+  --bg-dark: var(--dark);
+  --bg-light: var(--light);
+  --text-light: var(--light);
+  --text-red: var(--red);
+  --text-orange: var(--orange);
+  --text-yellow: var(--yellow);
+  --text-blue: var(--blue);
+  --bg-backdrop: rgba(34, 34, 34, 0.3);
+  --bg-nav: transparent;
+  --bg-nav--scrolled: var(--dark);
+
+  /* Layout */
+  --container-width: 1140px !important;
+  --container-padding: 7rem;
+  --block-box-padding: 1.5rem 3rem;
+  --inline-box-padding: 1rem;
+}
